@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - UTS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="side-title">Menu</h2>
+            <ul>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="products.html">List Produk</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <header class="page-header">
+                <h1>Dashboard</h1>
+
+                <button onclick="location.href='products.html'" class="btn small">
+                    Lihat Data Produk
+                </button>
+            </header>
+
+            <!-- SUMMARY -->
+            <section class="cards" id="summaryCards">
+                <!-- Konten diisi otomatis dari script.js -->
+            </section>
+
+            <section class="welcome">
+                <p>Selamat datang! Gunakan menu di samping untuk navigasi.</p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
