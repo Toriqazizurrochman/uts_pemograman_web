@@ -165,3 +165,34 @@ window.openAddModal = openAddModal;
 window.closeAddModal = closeAddModal;
 window.saveAdd = saveAdd;
 
+/* ---------------- LOGIN ---------------- */
+const loginBtn = document.getElementById("loginBtn");
+
+if (loginBtn) {
+    loginBtn.addEventListener("click", function () {
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const msg = document.getElementById("msg");
+
+        if (!email || !password) {
+            msg.textContent = "Email dan password harus diisi!";
+            msg.style.color = "red";
+            return;
+        }
+
+        // Login sederhana: password = NIM
+        // Kamu bisa ganti sesuai kebutuhan
+        if (password === "23090128") {
+            msg.textContent = "Login berhasil!";
+            msg.style.color = "green";
+
+            // redirect setelah login
+            setTimeout(() => {
+                window.location.href = "dashboard.html";
+            }, 500);
+        } else {
+            msg.textContent = "Password salah!";
+            msg.style.color = "red";
+        }
+    });
+}
